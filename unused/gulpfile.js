@@ -52,7 +52,7 @@ gulp.task('watch', function () {
 
 gulp.task('zip', ['css'], function() {
     var targetDir = 'dist/';
-    var themeName = require('./package.json').name;
+    var themeName = require('../package.json').name;
     var filename = themeName + '.zip';
 
     return gulp.src([
